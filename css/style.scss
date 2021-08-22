@@ -1,0 +1,92 @@
+html {
+  font-family: "Merriweather", serif;
+  font-size: 150%;
+  line-height: 1.35;
+  font-weight: 340;
+  color: var(--text);
+  background: var(--background);
+
+  /* Color */
+  --primary: #f4663a;
+  --background: #efeded;
+  --background-alt: #ffffff;
+  --text: #31355b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 45%;
+}
+
+.masthead {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5em;
+
+  color: var(--primary);
+  mix-blend-mode: multiply;
+  text-align: center;
+  font-variation-settings: "WONK" 1, "SOFT" 30;
+
+  // margin: 0.5em 0 -0.5em;
+}
+
+.about-me {
+  // padding: 50px 0px;
+  display: flex;
+}
+
+.container {
+  // width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: hidden;
+
+  section {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+    width: 100vw;
+    height: 100vh;
+
+    &:nth-of-type(2),
+    &:nth-of-type(4) {
+      background-color: #ffccbc;
+    }
+  }
+}
+
+.container li {
+  list-style: none;
+}
+
+.content {
+  text-align: center;
+
+  h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    padding: 7px;
+    margin: 0px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .quote,
+  .quote-person {
+    font-style: italic;
+    font-weight: bold;
+  }
+}

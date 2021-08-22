@@ -1,0 +1,96 @@
+html {
+  font-family: "Merriweather", serif;
+  font-size: 150%;
+  line-height: 1.35;
+  font-weight: 340;
+  color: var(--text);
+  background: var(--background);
+  /* Color */
+  --primary: #f4663a;
+  --background: #efeded;
+  --background-alt: #ffffff;
+  --text: #31355b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 45%;
+}
+
+.masthead {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5em;
+  color: var(--primary);
+  mix-blend-mode: multiply;
+  text-align: center;
+  font-variation-settings: "WONK" 1, "SOFT" 30;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: hidden;
+}
+
+.container section {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container section:nth-of-type(2), .container section:nth-of-type(4) {
+  background-color: #ffccbc;
+}
+
+.container li {
+  list-style: none;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  padding: 7px;
+  margin: 0px;
+}
+
+.content span {
+  font-weight: bold;
+}
+
+.content .quote,
+.content .quote-person {
+  font-style: italic;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
